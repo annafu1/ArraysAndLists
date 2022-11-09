@@ -4,14 +4,23 @@ public class AverageIntegerLists {
 
 
     public int count(ArrayList<Integer> aa) {
-        return 0;
+        return aa.size();
     }
 
     public int sum(ArrayList<Integer> aa) {
-        return 0;
+        int totalSum = 0;
+        for (int i = 0; i < aa.size(); i++) {
+            totalSum += aa.get(i);
+        }
+        return totalSum;
     }
 
     public int average(ArrayList<Integer> aa) {
-        return 0;
+        int totalSum = 0;
+        for (int i = 0; i < aa.size(); i++) {
+            totalSum += aa.get(i);
+        }
+        int avg = totalSum / aa.size();
+        return avg;
     }
 }
